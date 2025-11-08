@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Navbar from "./components/Navbar";
+import Link from "next/link";
 
 
 export default function Home() {
@@ -24,9 +25,11 @@ export default function Home() {
             </div>
             
             {/* SPIDER.WEB Blur Button - positioned closer and in front */}
+            <Link href="/Login">
             <button className="px-8 py-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-lg text-white font-bold text-xl tracking-wider hover:bg-white/20 transition-all duration-300 shadow-lg hover:shadow-xl relative z-10 -mt-16">
               SPIDER.WEB
             </button>
+            </Link>
           </div>
         </main>
       </div>
